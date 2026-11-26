@@ -1272,40 +1272,40 @@
   },
   "overhead": {
     "append_audit_log_file": {
-      "mean": 3616.4384999999997,
-      "median": 1509.4,
+      "mean": 747.645,
+      "median": 637.7,
       "n": 400,
-      "p95": 10426.494999999988
+      "p95": 1390.215
     },
     "append_audit_log_memory": {
-      "mean": 73.00399999999999,
-      "median": 24.8,
+      "mean": 20.24775,
+      "median": 18.9,
       "n": 400,
-      "p95": 49.694999999999915
+      "p95": 26.7
     },
     "append_none": {
-      "mean": 3.7030000000000003,
-      "median": 3.0,
+      "mean": 2.06925,
+      "median": 1.8,
       "n": 400,
-      "p95": 3.7
+      "p95": 3.3
     },
     "append_quorum_4_validators_memory": {
-      "mean": 3438.580499999999,
-      "median": 1112.4499999999998,
+      "mean": 805.84,
+      "median": 711.45,
       "n": 400,
-      "p95": 11077.924999999987
+      "p95": 1785.955
     },
     "evaluate_permissive": {
-      "mean": 44.6662,
-      "median": 17.0,
+      "mean": 18.430433333333333,
+      "median": 11.8,
       "n": 3000,
-      "p95": 25.504999999999974
+      "p95": 34.7
     },
     "evaluate_zero_trust": {
-      "mean": 970.2246666666666,
-      "median": 315.8,
+      "mean": 412.9849333333334,
+      "median": 326.1,
       "n": 3000,
-      "p95": 4364.509999999998
+      "p95": 955.4749999999968
     },
     "hardware": {
       "cpu_count": 12,
@@ -1316,34 +1316,34 @@
     },
     "n_per_variant": 400,
     "submit_permissive_audit_log": {
-      "mean": 12611.727999999997,
-      "median": 9850.35,
+      "mean": 2626.4380000000006,
+      "median": 2447.35,
       "n": 100,
-      "p95": 29450.725
+      "p95": 4507.325
     },
     "submit_permissive_no_ledger": {
-      "mean": 8269.664999999999,
-      "median": 7958.950000000001,
+      "mean": 2596.445,
+      "median": 2466.8,
       "n": 100,
-      "p95": 15424.55
+      "p95": 5049.48
     },
     "submit_zero_trust_audit_log": {
-      "mean": 12291.578999999996,
-      "median": 10790.9,
+      "mean": 3458.7950000000005,
+      "median": 3260.15,
       "n": 100,
-      "p95": 26546.889999999996
+      "p95": 5488.83
     },
     "submit_zero_trust_no_ledger": {
-      "mean": 10932.224000000002,
-      "median": 9107.25,
+      "mean": 3278.596999999999,
+      "median": 3094.45,
       "n": 100,
-      "p95": 21907.949999999993
+      "p95": 5197.945
     },
     "submit_zero_trust_quorum": {
-      "mean": 26180.591,
-      "median": 22175.8,
+      "mean": 8826.278,
+      "median": 8937.4,
       "n": 100,
-      "p95": 52158.225
+      "p95": 11775.39
     },
     "unit": "microseconds of Python wall time on this machine"
   },

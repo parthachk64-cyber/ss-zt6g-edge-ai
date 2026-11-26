@@ -2,11 +2,11 @@
   "artifact_hashes": {
     "detector.joblib": "bb0d5ab45a134a820a3b44685081cd673e576a206c10d62dc33b863594968d14",
     "forecaster.joblib": "0caf5b72e733d3c282421d9b99a817d26f746a90a7b6882aca4debf65d98310b",
-    "per_job_latency.csv.gz": "f0bea15041c8d28a05625ba382420a3352481874b3a4106ccecad97c648f189f"
+    "per_job_latency.csv.gz": "ba82d7eaea82013252e5f25259e6d45525a6f4f33e039dd7fee5dc13ba1b3f17"
   },
   "code_dirty": false,
-  "created_utc": "2026-11-26T02:07:18Z",
-  "git_commit": "92d039b4ba40ef69306f63d60123404784f59ffa",
+  "created_utc": "2026-11-26T02:38:13Z",
+  "git_commit": "fe91ea0d36b0d488fb912ef4de64e212a58f7abe",
   "hardware": {
     "cpu_count": 12,
     "gpu_used": false,
@@ -71,8 +71,8 @@
     "fixtures": {
       "arrivals_ramp_burst_seed1001.csv": "4115b814fe750f5e13c7cda664ec6497427c87ad6690196f6486886290ef737c",
       "intent_eligibility.csv": "18866511f8f74048cb121674d9d5671045c50a19b35ab6d9782936f44c935815",
-      "intents.jsonl": "2219b8e6f4ba07997e7d9dd1260b666131390c20a985c0a81b8caa9caadea11d",
-      "security_events.jsonl": "e018162dbf256a584a972ddfd9b567f441acb450c4c4b28f6d0cefe6562f6697",
+      "intents.jsonl": "46425fd77fd09ce041e31182371596688782dbb8cccec4806420cbbf11156fad",
+      "security_events.jsonl": "33483347f23c4ec6a0ea46a4e06de93a4e298f35e1d78f7596100c0cc269b818",
       "security_labels.csv": "6c96fe185359e52c34036a902de73c62fb292c1fdf095b3d9b67e7047319edc9",
       "security_splits.csv": "87a523055a6b2c813934da9014ef8d8d3a200448e7262e7d4bcdd392a211a1c4"
     }

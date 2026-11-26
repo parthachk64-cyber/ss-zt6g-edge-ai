@@ -1,6 +1,6 @@
 # Results ledger
 
-Run `demo`, generated 2026-11-26T02:07:18Z, code commit `92d039b4ba40ef69306f63d60123404784f59ffa` (working tree of code clean at run time). Regenerate with `sszt6g demo` (about a minute, CPU only). All tables below are produced from `runs/<id>/results.json`; per-job latencies, per-intent dispositions, labelled predictions and the manifest sit beside it.
+Run `demo`, generated 2026-11-26T02:38:13Z, code commit `fe91ea0d36b0d488fb912ef4de64e212a58f7abe` (working tree of code clean at run time). Regenerate with `sszt6g demo` (about a minute, CPU only). All tables below are produced from `runs/<id>/results.json`; per-job latencies, per-intent dispositions, labelled predictions and the manifest sit beside it.
 
 > **Read this first.** The paper is a simulation study whose code, data, labels and splits are not public and which does not define its comparators or endpoints. This repository therefore does **not reproduce** the paper's numbers. It runs an independent, seeded companion and reports what that companion measures, including results where the predictive planner is no better than a reactive one.
 
@@ -103,17 +103,17 @@ Hardware: Windows-10-10.0.26300-SP0, 12 logical CPUs, Python 3.10.11, no GPU. Th
 
 | Operation | n | median | p95 |
 |---|---:|---:|---:|
-| append_audit_log_file | 400 | 1509.4 | 10426.5 |
-| append_audit_log_memory | 400 | 24.8 | 49.7 |
-| append_none | 400 | 3.0 | 3.7 |
-| append_quorum_4_validators_memory | 400 | 1112.4 | 11077.9 |
-| evaluate_permissive | 3000 | 17.0 | 25.5 |
-| evaluate_zero_trust | 3000 | 315.8 | 4364.5 |
-| submit_permissive_audit_log | 100 | 9850.4 | 29450.7 |
-| submit_permissive_no_ledger | 100 | 7959.0 | 15424.5 |
-| submit_zero_trust_audit_log | 100 | 10790.9 | 26546.9 |
-| submit_zero_trust_no_ledger | 100 | 9107.2 | 21907.9 |
-| submit_zero_trust_quorum | 100 | 22175.8 | 52158.2 |
+| append_audit_log_file | 400 | 637.7 | 1390.2 |
+| append_audit_log_memory | 400 | 18.9 | 26.7 |
+| append_none | 400 | 1.8 | 3.3 |
+| append_quorum_4_validators_memory | 400 | 711.5 | 1786.0 |
+| evaluate_permissive | 3000 | 11.8 | 34.7 |
+| evaluate_zero_trust | 3000 | 326.1 | 955.5 |
+| submit_permissive_audit_log | 100 | 2447.3 | 4507.3 |
+| submit_permissive_no_ledger | 100 | 2466.8 | 5049.5 |
+| submit_zero_trust_audit_log | 100 | 3260.2 | 5488.8 |
+| submit_zero_trust_no_ledger | 100 | 3094.4 | 5197.9 |
+| submit_zero_trust_quorum | 100 | 8937.4 | 11775.4 |
 
 ## F. Forecaster vs persistence (held-out scenarios, one-step-ahead arrivals per 5 s interval)
 
