@@ -13,7 +13,9 @@ htmlcov/
 !/runs/README.md
 !/runs/demo/
 /runs/demo/*.joblib
-/runs/demo/audit/*.quorum/
+/runs/demo/audit/*
+!/runs/demo/audit/ramp_burst-s1001-predictive.audit.jsonl
+!/runs/demo/audit/ramp_burst-s1001-predictive.checkpoint.json
 # secrets and provider data
 .env
 *.pem

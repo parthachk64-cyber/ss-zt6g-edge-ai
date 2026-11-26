@@ -1,0 +1,384 @@
+{
+  "burst": {
+    "arms": {
+      "fixed": {
+        "first_action": null,
+        "jobs": 1231,
+        "latency_ms_mean": 2719.2555294701474,
+        "latency_ms_p95": 5108.00882999842,
+        "queue_ms_mean": 2603.8812048126474,
+        "queue_ms_p95": 4977.090452586199
+      },
+      "predictive": {
+        "first_action": {
+          "evidence": {
+            "demand_jobs_per_s": 19.262,
+            "est_utilisation": 1.156,
+            "forecast_ids": [
+              "fc-aa09ee975ef00205",
+              "fc-04a7418552c14b34"
+            ],
+            "have": 2,
+            "need": 4,
+            "queue_depth": 13,
+            "snapshot_id": "snap-6c945c1293d84500"
+          },
+          "intent_id": "int-ac91b0bfe7d9fe60",
+          "kind": "reserve",
+          "reason": null,
+          "servers": 2,
+          "site_to": "edge-east",
+          "state": "applied",
+          "t": 55000.0,
+          "type": "plan"
+        },
+        "jobs": 1473,
+        "latency_ms_mean": 280.39086879755325,
+        "latency_ms_p95": 1071.9627928328662,
+        "queue_ms_mean": 163.55600587203443,
+        "queue_ms_p95": 935.4638695879956
+      },
+      "reactive": {
+        "first_action": {
+          "evidence": {
+            "demand_jobs_per_s": 19.8,
+            "est_utilisation": 1.188,
+            "forecast_ids": [],
+            "have": 2,
+            "need": 4,
+            "queue_depth": 13,
+            "snapshot_id": "snap-6c945c1293d84500"
+          },
+          "intent_id": "int-ac91b0bfe7d9fe60",
+          "kind": "reserve",
+          "reason": null,
+          "servers": 2,
+          "site_to": "edge-east",
+          "state": "applied",
+          "t": 55000.0,
+          "type": "plan"
+        },
+        "jobs": 1473,
+        "latency_ms_mean": 280.39086879755325,
+        "latency_ms_p95": 1071.9627928328662,
+        "queue_ms_mean": 163.55600587203443,
+        "queue_ms_p95": 935.4638695879956
+      }
+    },
+    "same_arrivals": true,
+    "scenario": {
+      "horizon_ms": 120000,
+      "profiles": [
+        {
+          "base": 6.0,
+          "decay_s": 10.0,
+          "hold_s": 30.0,
+          "ingress": "edge-east",
+          "kind": "ramp_burst",
+          "peak": 24.0,
+          "ramp_s": 20.0,
+          "service": "vision-inference",
+          "start_s": 40.0
+        },
+        {
+          "base": 5.0,
+          "decay_s": 0.0,
+          "hold_s": 0.0,
+          "ingress": "edge-west",
+          "kind": "steady",
+          "peak": 0.0,
+          "ramp_s": 0.0,
+          "service": "traffic-analytics",
+          "start_s": 0.0
+        }
+      ],
+      "scenario_id": "demo-ramp_burst-s1001",
+      "seed": 1001
+    },
+    "trace": {
+      "activate_ms": 59000.0,
+      "decision": {
+        "allow": true,
+        "checks": {
+          "claim_current": true,
+          "issuer_known": true,
+          "op_allowed": true,
+          "policy_current": true,
+          "posture_compliant": true,
+          "resource_allowed": true,
+          "rule_exists": true,
+          "signature_valid": true,
+          "tenant_match": true,
+          "within_quota": true
+        },
+        "decision_id": "dec-8ee203505a23e2ea",
+        "evidence_ids": [
+          "issuer:fixture-issuer-a",
+          "nonce:n-7fa334866c48664c",
+          "request:int-ac91b0bfe7d9fe60",
+          "policy-rev:1",
+          "subject:controller:acme-video"
+        ],
+        "policy_revision": 1,
+        "reasons": []
+      },
+      "forecast": {
+        "features": [
+          30.0,
+          37.0,
+          20.0,
+          31.0,
+          59.0,
+          99.0,
+          6.5
+        ],
+        "forecast_id": "fc-aa09ee975ef00205",
+        "history_len": 11,
+        "ingress": "edge-east",
+        "made_at_ms": 55000.0,
+        "model_id": "ridge-lag6-queue",
+        "persistence_arrivals": 99.0,
+        "predicted_arrivals": 95.79298157045386,
+        "service": "vision-inference",
+        "target_window_ms": [
+          55000.0,
+          60000.0
+        ]
+      },
+      "forecast_matches_logged_id": true,
+      "future_records_used": 0,
+      "ingress_arrivals_east_last6": [
+        30,
+        37,
+        20,
+        31,
+        59,
+        99
+      ],
+      "intent_to_verified_ms": 5000.0,
+      "latest_record_ts_ms": 55000.0,
+      "ledger_verified": true,
+      "observation_cutoff_ms": 55000.0,
+      "plan": {
+        "evidence": {
+          "demand_jobs_per_s": 19.262,
+          "est_utilisation": 1.156,
+          "forecast_ids": [
+            "fc-aa09ee975ef00205",
+            "fc-04a7418552c14b34"
+          ],
+          "have": 2,
+          "need": 4,
+          "queue_depth": 13,
+          "snapshot_id": "snap-6c945c1293d84500"
+        },
+        "kind": "reserve",
+        "servers": 2,
+        "site_to": "edge-east"
+      },
+      "receipts": {
+        "applied": {
+          "action_id": "act-5a95b641977bcb1c",
+          "entry_hash": "717039a3d56894e362a45398bb262afad060bab209b6eb310be8e589dd1272a3",
+          "extra": {},
+          "head_hash": "717039a3d56894e362a45398bb262afad060bab209b6eb310be8e589dd1272a3",
+          "ledger": "audit-log",
+          "receipt_id": "rcpt-bafe1878e44e66dc",
+          "seq": 4,
+          "state": "applied"
+        },
+        "authorized": {
+          "action_id": "act-5a95b641977bcb1c",
+          "entry_hash": "f50e9c455a4c522265e55f3563b6447e90a7a43da5bba90fd3d7b8300b4447e3",
+          "extra": {},
+          "head_hash": "f50e9c455a4c522265e55f3563b6447e90a7a43da5bba90fd3d7b8300b4447e3",
+          "ledger": "audit-log",
+          "receipt_id": "rcpt-d7f3a594c113c1df",
+          "seq": 2,
+          "state": "authorized"
+        },
+        "committed": {
+          "action_id": "act-5a95b641977bcb1c",
+          "entry_hash": "7719c46d4c23def9cba6550b03059c025828068bb9cd85cb7d6d715643adbdc9",
+          "extra": {},
+          "head_hash": "7719c46d4c23def9cba6550b03059c025828068bb9cd85cb7d6d715643adbdc9",
+          "ledger": "audit-log",
+          "receipt_id": "rcpt-b19f071568e899ed",
+          "seq": 3,
+          "state": "committed"
+        },
+        "proposed": {
+          "action_id": "act-5a95b641977bcb1c",
+          "entry_hash": "1714199f0803824c37e01af82952d56b5320f075eafea14ee7b6691c1851cd9d",
+          "extra": {},
+          "head_hash": "1714199f0803824c37e01af82952d56b5320f075eafea14ee7b6691c1851cd9d",
+          "ledger": "audit-log",
+          "receipt_id": "rcpt-e7ad7e8323e971df",
+          "seq": 1,
+          "state": "proposed"
+        },
+        "verified": {
+          "action_id": "act-5a95b641977bcb1c",
+          "entry_hash": "c678117a4bc142a180b5a4c0e5b49a58b93d554a09372deda39ea8f9223cee80",
+          "extra": {},
+          "head_hash": "c678117a4bc142a180b5a4c0e5b49a58b93d554a09372deda39ea8f9223cee80",
+          "ledger": "audit-log",
+          "receipt_id": "rcpt-5bfccd30f4cc4fa6",
+          "seq": 5,
+          "state": "verified"
+        }
+      },
+      "snapshot_id": "snap-6c945c1293d84500",
+      "snapshot_records_used": 44,
+      "state": "verified",
+      "submitted_ms": 55000.0,
+      "verified_ms": 60000.0
+    }
+  },
+  "denial": {
+    "capacity_available_at_destination": true,
+    "capacity_unchanged": true,
+    "checks": {
+      "claim_current": true,
+      "issuer_known": true,
+      "op_allowed": false,
+      "policy_current": true,
+      "posture_compliant": true,
+      "resource_allowed": true,
+      "rule_exists": true,
+      "signature_valid": true,
+      "tenant_match": true,
+      "within_quota": true
+    },
+    "intent": {
+      "intent_id": "int-1effdba537ecde4f",
+      "kind": "move",
+      "servers": 1,
+      "service": "traffic-analytics",
+      "site_from": "edge-west",
+      "site_to": "edge-east",
+      "tenant": "city-traffic"
+    },
+    "ledger_entries": 2,
+    "occupancy_after": {
+      "edge-east": {
+        "allocated": 2,
+        "background": 2,
+        "free": 4,
+        "pending_adds": 0
+      },
+      "edge-west": {
+        "allocated": 2,
+        "background": 4,
+        "free": 2,
+        "pending_adds": 0
+      }
+    },
+    "occupancy_before": {
+      "edge-east": {
+        "allocated": 2,
+        "background": 2,
+        "free": 4,
+        "pending_adds": 0
+      },
+      "edge-west": {
+        "allocated": 2,
+        "background": 4,
+        "free": 2,
+        "pending_adds": 0
+      }
+    },
+    "reasons": [
+      "op_not_allowed"
+    ],
+    "receipts": {
+      "denied": {
+        "action_id": "act-99ea1bbf249a9d8c",
+        "entry_hash": "1047258c3120f50b93f59bb49ed941dc4cf8c7d2ecff87d445378219abb4637b",
+        "extra": {},
+        "head_hash": "1047258c3120f50b93f59bb49ed941dc4cf8c7d2ecff87d445378219abb4637b",
+        "ledger": "audit-log",
+        "receipt_id": "rcpt-603da574ef5d672d",
+        "seq": 2,
+        "state": "denied"
+      },
+      "proposed": {
+        "action_id": "act-99ea1bbf249a9d8c",
+        "entry_hash": "4b534a15bd66d4852e53632feff8a8b21dd77ff7e254f739afae4df79d17e450",
+        "extra": {},
+        "head_hash": "4b534a15bd66d4852e53632feff8a8b21dd77ff7e254f739afae4df79d17e450",
+        "ledger": "audit-log",
+        "receipt_id": "rcpt-4ff21e49bd63c084",
+        "seq": 1,
+        "state": "proposed"
+      }
+    },
+    "state": "denied"
+  },
+  "duplicate_after_restart": {
+    "allocation_delta_total": 2,
+    "capacity_changed_by_duplicate": false,
+    "crashed_after_commit": true,
+    "db_state_at_crash": "committed",
+    "duplicate_delivery": {
+      "duplicate": true,
+      "state": "applied"
+    },
+    "each_state_recorded_once": true,
+    "final_state": "verified",
+    "ledger_ok": true,
+    "ledger_states_for_action": [
+      "proposed",
+      "authorized",
+      "committed",
+      "applied",
+      "verified"
+    ],
+    "occupancy_after_duplicate": {
+      "edge-east": {
+        "allocated": 2,
+        "background": 2,
+        "free": 2,
+        "pending_adds": 2
+      },
+      "edge-west": {
+        "allocated": 2,
+        "background": 4,
+        "free": 2,
+        "pending_adds": 0
+      }
+    },
+    "occupancy_after_recovery": {
+      "edge-east": {
+        "allocated": 2,
+        "background": 2,
+        "free": 2,
+        "pending_adds": 2
+      },
+      "edge-west": {
+        "allocated": 2,
+        "background": 4,
+        "free": 2,
+        "pending_adds": 0
+      }
+    },
+    "occupancy_before": {
+      "edge-east": {
+        "allocated": 2,
+        "background": 2,
+        "free": 4,
+        "pending_adds": 0
+      },
+      "edge-west": {
+        "allocated": 2,
+        "background": 4,
+        "free": 2,
+        "pending_adds": 0
+      }
+    },
+    "recovered_actions": [
+      "applied"
+    ]
+  },
+  "seed": 1001
+}

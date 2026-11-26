@@ -1,0 +1,6 @@
+{
+  "seq": 10,
+  "head": "eddcd74dde98e4e06e4ba27c09cd71480d7ccb5dd64846ce744368f070af23a2",
+  "kid": "audit-checkpoint-signer",
+  "sig": "44ab84b38c0679e7cdf4dc2659944f39b3e16d315495dd243c28895d1df75ff09eb4e8a7c96ff6b1a96947335b550b48ab57e32a9f1c36dbbb5802f88d77780c"
+}

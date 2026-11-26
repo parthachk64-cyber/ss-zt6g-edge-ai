@@ -1,0 +1,112 @@
+[
+  {
+    "event_id": "ev-09-0000",
+    "detector": "logreg",
+    "score": 0.09890497666500006,
+    "orientation": "higher_is_more_anomalous",
+    "threshold": 0.2419,
+    "features": {
+      "claim_age_frac": 0.29239238761178216,
+      "tenant_match": 1.0,
+      "sig_valid": 1.0,
+      "posture_score": 1.0,
+      "rate_60s": 0.0,
+      "rate_z": -0.4982706532398167,
+      "op_rarity": 1.8430527636156055,
+      "nonce_reuse": 0.0,
+      "stale_policy": 0.0
+    },
+    "decision": "no_alert",
+    "evidence_ids": [
+      "event:ev-09-0000"
+    ]
+  },
+  {
+    "event_id": "ev-09-0001",
+    "detector": "logreg",
+    "score": 0.10105616304881816,
+    "orientation": "higher_is_more_anomalous",
+    "threshold": 0.2419,
+    "features": {
+      "claim_age_frac": 0.2846923974248415,
+      "tenant_match": 1.0,
+      "sig_valid": 1.0,
+      "posture_score": 1.0,
+      "rate_60s": 0.0,
+      "rate_z": -0.4982706532398167,
+      "op_rarity": 1.8813716279177422,
+      "nonce_reuse": 0.0,
+      "stale_policy": 0.0
+    },
+    "decision": "no_alert",
+    "evidence_ids": [
+      "event:ev-09-0001"
+    ]
+  },
+  {
+    "event_id": "ev-09-0002",
+    "detector": "logreg",
+    "score": 0.00973665980813605,
+    "orientation": "higher_is_more_anomalous",
+    "threshold": 0.2419,
+    "features": {
+      "claim_age_frac": 0.16587925552904348,
+      "tenant_match": 1.0,
+      "sig_valid": 1.0,
+      "posture_score": 1.0,
+      "rate_60s": 0.0,
+      "rate_z": -0.4982706532398167,
+      "op_rarity": 0.2528353411216128,
+      "nonce_reuse": 0.0,
+      "stale_policy": 0.0
+    },
+    "decision": "no_alert",
+    "evidence_ids": [
+      "event:ev-09-0002"
+    ]
+  },
+  {
+    "event_id": "ev-09-0003",
+    "detector": "logreg",
+    "score": 0.9981678070322996,
+    "orientation": "higher_is_more_anomalous",
+    "threshold": 0.2419,
+    "features": {
+      "claim_age_frac": 0.2846923974248415,
+      "tenant_match": 1.0,
+      "sig_valid": 1.0,
+      "posture_score": 1.0,
+      "rate_60s": 1.0,
+      "rate_z": -0.22203273878678023,
+      "op_rarity": 1.8813716279177422,
+      "nonce_reuse": 1.0,
+      "stale_policy": 0.0
+    },
+    "decision": "alert",
+    "evidence_ids": [
+      "event:ev-09-0003"
+    ]
+  },
+  {
+    "event_id": "ev-09-0004",
+    "detector": "logreg",
+    "score": 0.1382489056155861,
+    "orientation": "higher_is_more_anomalous",
+    "threshold": 0.2419,
+    "features": {
+      "claim_age_frac": 0.31776169205622645,
+      "tenant_match": 1.0,
+      "sig_valid": 1.0,
+      "posture_score": 1.0,
+      "rate_60s": 0.0,
+      "rate_z": -0.4982706532398167,
+      "op_rarity": 2.0794415416798357,
+      "nonce_reuse": 0.0,
+      "stale_policy": 0.0
+    },
+    "decision": "no_alert",
+    "evidence_ids": [
+      "event:ev-09-0004"
+    ]
+  }
+]
