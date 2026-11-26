@@ -157,7 +157,7 @@ def assign_splits(labels: list, train_eps: int, dev_eps: int) -> list:
 
 
 def write_security(dirpath: Path, events: list, labels: list, splits: list) -> None:
-    with open(dirpath / "security_events.jsonl", "w", encoding="utf-8") as fh:
+    with open(dirpath / "security_events.jsonl", "w", encoding="utf-8", newline="\n") as fh:
         for e in events:
             fh.write(json.dumps(e, sort_keys=True, separators=(",", ":")) + "\n")
     for name, rows, cols in (("security_labels.csv", labels, ["event_id", "episode", "label", "attack_kind", "benign_kind"]),
@@ -213,7 +213,7 @@ def generate_intents(world: World, seed: int, horizon_ms: int = 120_000) -> tupl
 
 
 def write_intents(dirpath: Path, intents: list, elig: dict) -> None:
-    with open(dirpath / "intents.jsonl", "w", encoding="utf-8") as fh:
+    with open(dirpath / "intents.jsonl", "w", encoding="utf-8", newline="\n") as fh:
         for it in intents:
             fh.write(json.dumps(it.to_dict(), sort_keys=True, separators=(",", ":")) + "\n")
     with open(dirpath / "intent_eligibility.csv", "w", newline="", encoding="utf-8") as fh:

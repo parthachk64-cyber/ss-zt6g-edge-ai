@@ -106,7 +106,7 @@ class AuditLog:
         h = sha256_hex(canonical(body))
         rec = {**body, "hash": h}
         if self.path:
-            with open(self.path, "a", encoding="utf-8") as fh:
+            with open(self.path, "a", encoding="utf-8", newline="\n") as fh:
                 fh.write(json.dumps(rec, sort_keys=True, separators=(",", ":")) + "\n")
         self._entries.append(rec)
         return Receipt("audit-log", rec["seq"], h, h, entry.get("state", ""), entry.get("action_id", ""))
@@ -187,7 +187,7 @@ class Validator:
     def commit(self, block: dict) -> None:
         self.chain.append(copy.deepcopy(block))  # each replica owns its copy: no aliasing between validators
         if self.path:
-            with open(self.path, "a", encoding="utf-8") as fh:
+            with open(self.path, "a", encoding="utf-8", newline="\n") as fh:
                 fh.write(json.dumps(block, sort_keys=True, separators=(",", ":")) + "\n")
 
 
