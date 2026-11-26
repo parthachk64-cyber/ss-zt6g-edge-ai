@@ -1,0 +1,39 @@
+sites:
+- site_id: edge-east
+  max_servers: 8
+- site_id: edge-west
+  max_servers: 8
+services:
+- service_id: vision-inference
+  tenant_id: acme-video
+  work_ms: 120.0
+  deadline_ms: 400.0
+  max_queue: 80
+  allowed_tenants:
+  - acme-video
+- service_id: traffic-analytics
+  tenant_id: city-traffic
+  work_ms: 80.0
+  deadline_ms: 400.0
+  max_queue: 80
+  allowed_tenants:
+  - city-traffic
+net_ms:
+  edge-east:
+    edge-east: 2.0
+    edge-west: 9.0
+  edge-west:
+    edge-east: 9.0
+    edge-west: 2.0
+interval_ms: 5000
+provision_ms: 4000
+migration_ms: 3000
+initial:
+  vision-inference@edge-east: 2
+  traffic-analytics@edge-west: 2
+tenant_quota:
+  acme-video: 6
+  city-traffic: 8
+background:
+  edge-east: 2
+  edge-west: 4

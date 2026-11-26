@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this repository, cite the article it accompanies (preferred) and, if needed, this software."
+title: "sszt6g: an independent research companion for a zero-touch 6G edge-AI orchestration study"
+type: software
+version: 0.1.0
+license: MIT
+authors:
+  - family-names: Chakraborty
+    given-names: Partha
+    alias: parthachk64-cyber
+repository-code: "https://github.com/parthachk64-cyber/ss-zt6g-edge-ai"
+abstract: >-
+  Offline Python simulator, predictive planner, zero-trust policy checks and audit ledger used to examine one
+  orchestration decision and to compare reproducible baselines. Independent of the article's own (unreleased)
+  implementation; it does not reproduce the article's reported results.
+preferred-citation:
+  type: article
+  title: "Secured and Standardized Intelligent Zero-Touch 6G Framework for Edge-AI Applications"
+  journal: "IEEE Communications Standards Magazine"
+  year: 2026
+  start: 1
+  end: 5
+  doi: "10.1109/MCOMSTD.2026.3660159"
+  notes: "IEEE Early Access article (IEEE Xplore document 11411876); no volume or issue assigned as of 2026-11-26."
+  authors:
+    - family-names: Mahin
+      given-names: Md Rayhan Hassan
+    - family-names: Chakraborty
+      given-names: Partha
+    - family-names: Das
+      given-names: Niropam
+    - family-names: Kaur
+      given-names: Harleen
+    - family-names: Himel
+      given-names: Hemayet Uddin
+    - family-names: Kaur
+      given-names: Jobanpreet
+    - family-names: Mohapatra
+      given-names: Ambarish G.

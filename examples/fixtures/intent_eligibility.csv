@@ -1,0 +1,11 @@
+intent_id,eligible,static_reasons
+int-0e64acf19563a197,1,
+int-2340bfbf89eb11f6,1,
+int-2ca7cdd81310e3ce,0,op_not_allowed
+int-4932c7d2d944d562,1,
+int-5a8fb653dc0aeaf5,0,quota_exceeded
+int-5d465ceb00e9c187,1,
+int-99aacc1505e46ac6,0,claim_expired_or_not_yet_valid
+int-a9a1b041ad59f912,1,
+int-bf04d4bf8145b66f,1,
+int-c4754fe42e5feb5e,0,tenant_mismatch|resource_not_allowed

@@ -1,0 +1,31 @@
+revision: 1
+tenants:
+  acme-video:
+    ops:
+    - reserve
+    - move
+    - retain
+    - read_telemetry
+    services:
+    - vision-inference
+    sites: []
+    max_servers: 6
+  city-traffic:
+    ops:
+    - reserve
+    - retain
+    - read_telemetry
+    services:
+    - traffic-analytics
+    sites: []
+    max_servers: 8
+  metro-health:
+    ops:
+    - reserve
+    - retain
+    - read_telemetry
+    services:
+    - triage-vision
+    sites:
+    - edge-east
+    max_servers: 3

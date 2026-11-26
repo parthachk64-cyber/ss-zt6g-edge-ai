@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+# generated run workspaces stay local; only the reviewed run is committed (see runs/README.md)
+/runs/*
+!/runs/README.md
+!/runs/demo/
+/runs/demo/*.joblib
+/runs/demo/audit/*.quorum/
+# secrets and provider data
+.env
+*.pem
+*.key
+_private*/

@@ -1,0 +1,80 @@
+seeds:
+  train:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  dev:
+  - 501
+  - 502
+  - 503
+  - 504
+  test:
+  - 1001
+  - 1002
+  - 1003
+  - 1004
+  - 1005
+  - 1006
+  - 1007
+  - 1008
+  demo: 1001
+forecaster:
+  alpha: 3.0
+  lags: 6
+planner:
+  target_util: 0.7
+  trigger_util: 0.8
+  queue_trigger: 6.0
+  max_step: 3
+orchestrator:
+  ttl_ms: 30000.0
+  max_snapshot_age_ms: 15000.0
+  sla_ms: 20000.0
+  cooldown_ms: 10000.0
+faults:
+  lost_activation_frac: 0.1
+  salt: sszt6g-fault-v1
+test_scenarios:
+- kind: ramp_burst
+  peak: 24.0
+  ramp_s: 20.0
+- kind: step_burst
+  peak: 24.0
+  ramp_s: 0.0
+- kind: steady_low
+  peak: 6.0
+  ramp_s: 0.0
+intents:
+  eligible: 6
+  ineligible: 4
+  duplicates: 2
+security:
+  episodes: 12
+  events_per_episode: 150
+  train_episodes: 7
+  dev_episodes: 2
+  seed: 4242
+overhead:
+  appends: 400
+  evaluations: 3000
